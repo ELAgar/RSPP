@@ -1,0 +1,57 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+}
+
+p, body, html {
+    font-size: 15px;
+    font-family: $font-base, sans-serif;
+    color: $grey-1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: $font-base, sans-serif;
+}
+
+.wr {
+    max-width: 1280px;
+    min-width: 340px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: underline;
+    color: $black;
+    font-weight: bold;
+    font-family: $font-base, sans-serif;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+%clear {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
